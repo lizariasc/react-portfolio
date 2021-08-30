@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Run Buddy",
+        "image": "img/gallery/project-1.jpg",
+        "github": "https://github.com/lizariasc/run-buddy",
+        "deploy": "https://lizariasc.github.io/run-buddy/"
+    },
+    {
+        "id": 2,
+        "name": "Plan Your Trip",
+        "image": "img/gallery/project-2.jpg",
+        "github": "https://github.com/lizariasc/plan-your-trip",
+        "deploy": "https://inara-nyingifa.github.io/plan-your-trip/"
+    },
+    {
+        "id": 3,
+        "name": "Taskmaster-Pro",
+        "image": "img/gallery/project-3.jpg",
+        "github": "https://github.com/lizariasc/taskmaster-pro",
+        "deploy": "https://lizariasc.github.io/taskmaster-pro/"
+    },
+    {
+        "id": 4,
+        "name": "Food Festival",
+        "image": "img/gallery/project-4.jpg",
+        "github": "https://github.com/lizariasc/food-festival",
+        "deploy": "https://lizariasc.github.io/food-festival/"
+    },
+    {
+        "id": 5,
+        "name": "My Health",
+        "image": "img/gallery/project-5.jpg",
+        "github": "https://github.com/lizariasc/MyHealth",
+        "deploy": "https://my-health-application.herokuapp.com"
+    },
+    {
+        "id": 6,
+        "name": "Budget Tracker",
+        "image": "img/gallery/project-6.jpg",
+        "github": "https://github.com/lizariasc/budget-tracker",
+        "deploy": "https://budget-tracker-liz.herokuapp.com"
+    }
+]

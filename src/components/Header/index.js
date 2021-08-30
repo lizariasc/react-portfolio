@@ -1,31 +1,30 @@
-import React from 'react';
+import React, { Component } from "react";
+import { Route, Redirect, HashRouter } from "react-router-dom";
+import Navigation from "../../components/Navigation";
+import About from "../../components/About";
+import Portfolio from "../../components/Portfolio";
+import Contact from '../../components/Contact';
+import Tabs from '../../components/Tabs';
 
-function Header() {
-  return (
-	  <header className="header_area">
-            <div className="main_menu">
-            	<nav className="navbar navbar-expand-lg navbar-light">
-					<div className="container box_1620">
-						<a className="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></img></a>
-						<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span className="icon-bar"></span>
-							<span className="icon-bar"></span>
-							<span className="icon-bar"></span>
-						</button>
-						<div className="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul className="nav navbar-nav menu_nav ml-auto">
-								<li className="nav-item active"><a className="nav-link" href="index.html">Home</a></li> 
-								<li className="nav-item"><a className="nav-link" href="#">About me</a></li> 
-								<li className="nav-item"><a className="nav-link" href="#">Portfolio</a></li>
-								<li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
-								<li className="nav-item"><a className="nav-link" href="#">Resume</a></li>
-							</ul>
-						</div> 
-					</div>
-            	</nav>
-            </div>
-	</header>
-  );
+
+class Header extends Component {
+  render() {
+    return (
+      <HashRouter>
+        <header>
+          <Navigation />
+        </header>
+
+        <div className="content">
+          <Route exact path="/" render={() => <Redirect to="/about" />} />
+          <Route path="/about" component={About} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/contact" component={Contact}/>
+          <Route path="/tabs" component={Tabs}/>
+        </div>
+      </HashRouter>
+    );
+  }
 }
 
 export default Header;

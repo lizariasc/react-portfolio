@@ -1,18 +1,18 @@
 import React from 'react';
 
-function Tabs() {
+function Footer() {
   return (
-<footer class="footer_area p_100">
-<div class="container">
-    <div class="row footer_inner">
-        <div class="col-lg-4">
-            <aside class="f_widget social_widget">
-                <div class="f_title">
+<footer className="footer_area p_100">
+<div className="container">
+    <div className="row footer_inner">
+        <div className="col-lg-4">
+            <aside className="f_widget social_widget">
+                <div className="f_title">
                     <h3>Follow Me</h3>
                 </div>
-                <ul class="list">
-                    <li><a href="https://github.com/lizariasc"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/liz-arias/"><i class="fa fa-linkedin"></i></a></li>
+                <ul className="list">
+                    <li><a href="https://github.com/lizariasc"><i className="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/liz-arias/"><i className="fa fa-linkedin"></i></a></li>
                 </ul>
             </aside>
         </div>
@@ -22,4 +22,4 @@ function Tabs() {
     );
 }
 
-export default Tabs;
+export default Footer;
